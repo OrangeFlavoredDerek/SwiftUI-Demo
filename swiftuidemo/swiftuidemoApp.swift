@@ -11,7 +11,7 @@ import SwiftUI
 struct swiftuidemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ControlView()
+            ControlRelatedView()
         }
     }
 }
