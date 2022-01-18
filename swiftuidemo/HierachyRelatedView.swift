@@ -12,7 +12,7 @@ struct HierachyRelatedView: View {
     let name: [String] = ["天狗", "爆款", "国际", "海外", "超市", "充值", "机票", "金币", "拍卖", "吃货", "分类", "美食", "健康", "生活", "汽车", "闲猪", "会员", "门票", "土货", "鲜食"]
     @State var showModal: Bool = false
     @State var showActionSheet: Bool = false
-    @State var showAlert: Bool = false
+    @State var showAlert1: Bool = false
     @State var showAlert2: Bool = false
     
     var body: some View {
@@ -149,14 +149,14 @@ struct HierachyRelatedView: View {
             //MARK: 警告视图
             VStack(spacing: 50) {
                 Button {
-                    showAlert.toggle()
+                    showAlert1.toggle()
                 } label: {
                     Text("显示「允许选择的警告」")
                         .font(.headline)
                         .frame(width: 200)
                         .cardStyle()
                 }
-                .alert(isPresented: $showAlert) {
+                .alert(isPresented: $showAlert1) {
                     Alert(title: Text("删除"), message: Text("此操作会永久移除该文件，你确定继续吗？"), primaryButton: .destructive(Text("是")), secondaryButton: .destructive(Text("否")))
                 }
                 
