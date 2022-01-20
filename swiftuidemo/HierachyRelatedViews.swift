@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HierachyRelatedView: View {
+struct HierachyRelatedViews: View {
     let circleRadius: CGFloat = 62
     let name: [String] = ["天狗", "爆款", "国际", "海外", "超市", "充值", "机票", "金币", "拍卖", "吃货", "分类", "美食", "健康", "生活", "汽车", "闲猪", "会员", "门票", "土货", "鲜食"]
     @State var showModal: Bool = false
@@ -95,7 +95,7 @@ struct HierachyRelatedView: View {
                 .navigationBarTitle("项目列表", displayMode: .automatic)
                 .navigationBarItems(leading:
                                         NavigationLink(destination: {
-                    ControlRelatedView()
+                    ControlRelatedViews()
                 }, label: {
                     Text("skip to CRV")
                 })
@@ -189,6 +189,6 @@ struct HierachyRelatedView: View {
 
 struct HierachyRelatedView_Previews: PreviewProvider {
     static var previews: some View {
-        HierachyRelatedView()
+        HierachyRelatedViews()
     }
 }

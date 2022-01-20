@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 //控制视图
-struct ControlRelatedView: View {
+struct ControlRelatedViews: View {
     @State var toggleValue: Bool = true
     @State var slideValue: Double = 0.0
     @State var stepperValue: Int = 0
@@ -184,7 +184,7 @@ struct ControlRelatedView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlRelatedView()
+        ControlRelatedViews()
     }
 }
 
